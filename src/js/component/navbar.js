@@ -1,6 +1,7 @@
 import React, { useEffect, useState, useContext } from "react";
 import { Link } from "react-router-dom";
 import { Context } from "../store/appContext";
+import LogoIMG from "../../img/logo.png";
 import "../../styles/navbar.scss";
 
 export const Navbar = () => {
@@ -12,10 +13,7 @@ export const Navbar = () => {
 				<span className="navb  ar-brand mb-0 h1">
 					{/* <img src={"https://logos-marcas.com/wp-content/uploads/2020/11/Star-Wars-Logo.png "} /> */}
 
-					<img
-						className="logocss"
-						src={"https://ov12-engine.flamingtext.com/netfu/tmp28009/coollogo_com-172271064.png "}
-					/>
+					<img className="logocss" src={LogoIMG} />
 				</span>
 			</Link>
 			<div className="ml-auto dropdown">
@@ -49,6 +47,17 @@ export const Navbar = () => {
 	);
 };
 
+// const setObj = new Set(); // creamos pares de clave y array
+
+// const unicFab = store.favorites.reduce((acc, favorite) => {
+// 	if (!setObj.has(favorite.name)) {
+// 		setObj.add(favorite.name, favorite);
+// 		acc.push(favorite);
+// 	}
+// 	return acc;
+// }, []);
+
+//no repetir favorite https://www.neoguias.com/como-eliminar-duplicados-array-javascript/
 {
 	/* <li key={index}>
 {task.label}{" "}

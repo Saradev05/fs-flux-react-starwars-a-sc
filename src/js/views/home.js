@@ -28,18 +28,18 @@ export const Home = () => {
 	});
 
 	return (
-		<div className="fondo">
-			<div className="text-center mt-5">
+		<div className="fondo container-fluid">
+			<div className="text-center  row mt-5">
 				<h1>Planets</h1>
 				<div className="all-planets"> {allPlanets} </div>
 			</div>
 
-			<div className="text-center mt-5">
+			<div className="text-center  mt-5">
 				<h1>People</h1>
 				<div className="all-people"> {allPeople} </div>
 			</div>
 
-			<div className="text-center mt-5">
+			<div className="text-center  mt-5">
 				<h1>Vehicles</h1>
 				<div className="all-vehicles"> {allVehicles} </div>
 			</div>
